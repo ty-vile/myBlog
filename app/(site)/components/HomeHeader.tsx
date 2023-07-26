@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const HomeHeader = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-8">
-      <div className="flex flex-col lg:flex-row lg:items-center gap-8 border-4 p-6 border-black w-fit rounded-lg shadow-card hover:-translate-x-1 hover:-translate-y-1 transition-all duration-500">
+    <div className="flex flex-col lg:flex-row gap-8 ">
+      <div className="flex flex-col lg:flex-row lg:items-center gap-8 border-4 p-6 border-black w-fit rounded-lg shadow-card">
         <h1 className="text-7xl lg:text-[120px]">WELCOME TO MY MIND</h1>
         <div className="block">
           <Image
