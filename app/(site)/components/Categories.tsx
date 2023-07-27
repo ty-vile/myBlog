@@ -4,13 +4,13 @@ import { BlogProps } from "@/types";
 
 type Props = {
   setCurrentBlogs: React.Dispatch<React.SetStateAction<BlogProps[]>>;
-  blogs: BlogProps[];
+  currentBlogs: BlogProps[];
 };
 
-const Categories: React.FC<Props> = ({ blogs, setCurrentBlogs }) => {
+const Categories: React.FC<Props> = ({ currentBlogs, setCurrentBlogs }) => {
   const uniqueCategories = new Set<string>();
 
-  blogs.forEach((obj) => {
+  currentBlogs.forEach((obj) => {
     obj.categories.forEach((category) => {
       uniqueCategories.add(category);
     });
@@ -34,7 +34,6 @@ const Categories: React.FC<Props> = ({ blogs, setCurrentBlogs }) => {
           </div>
         );
       })}
-      <button onClick={handleClick}>Test</button>
     </div>
   );
 };
